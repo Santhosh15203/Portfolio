@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins',sans-serif;
+
+}
+
+.custom-width {
+    width:75%;      
+    max-width: 1200px;
+}
+.inform{
+    position: relative;
+    animation: inform 2s;
+    animation-timing-function: ease-out;
+}
+@keyframes inform {
+    from{
+        bottom: -250px;
+    }
+    to{
+        bottom: 0px;
+    }
+}
+.custom-gap{
+    column-gap: 100px;
+    
+}
+
+.information{
+    margin-top: 80px;
+}
+
+.custom-animate{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.course-container{
+    position: relative;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.course::before{
+content: "";
+left: 0;
+top: 0;
+background-color: white;
+border-left: 2px solid black;
+width: 100%;
+height: 100%;
+position: absolute;
+animation: animate 4s steps(20) infinite;
+}
+
+@keyframes animate {
+    48%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.welcome{
+    position: relative;
+    width: 100px;
+    animation: rightmove 1.5s;
+    animation-timing-function: ease-out;
+}
+@keyframes rightmove {
+    from{
+        left:-50px;
+        }
+    to{
+        left:0px;
+    }
+}
+.aboutMe{
+    text-align: justify;
+}
+.social{
+    column-gap:20px;
+    font-size: large;
+    height: 40px;
+    text-align: center;
+
+}
+
+.social li:hover{
+    color:green;
+}
+.countingUp{
+    text-align: center;
+    margin-top: 25px;
+}
+.counter{
+    
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.project-custom-width{
+    width: 50%;
+}
+.project-custom-width p{
+    text-align: center;
+}
+.content-width{
+    width: 50%;
+    position: relative;
+    
+}
+
+@media (max-width:768px) {
+    .project-custom-width{
+        width: 100%;
+        
+    }
+    .project-custom-width p{
+        text-align: justify;
+    }
+    .content-width{
+        width: 100%;
+    }
+}
+
+
+.left-content-container{
+    width: 50%;
+    text-align: left;
+    line-height: 25px;
+    position: relative;
+    animation: left-content 1.5s ease-out;
+}
+@keyframes left-content {
+    from{
+        left: -50px;
+        opacity: 0;
+    }
+    to{
+        left: 0px;
+        opacity: 1;
+    }
+}
+.right-content-container{
+    width: 50%;
+    margin-left: 50%;
+    text-align: right;
+    position: relative;
+    animation: right-content 1.5s ease-out;
+}
+@keyframes right-content {
+    from{
+        right: -50px;
+        opacity: 0;
+    }
+    to{
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+.left-content-container img{
+    width: 40px;
+    position: absolute;
+    right: -23px;
+    top: 40%;
+}
+.right-content-container img{
+    width: 40px;
+   position: absolute;
+   left: -17px;
+   top: 40%;
+   
+}
+
+.timeline::after{
+    position: absolute;
+    left: 50%;
+    content: "";
+    width: 6px;
+    height: 100%;
+    top: 0px;
+    z-index: -1;
+   border-radius: 20px;
+   animation: timeline 2.5s linear;
+   background-color: #249b45;
+}
+@keyframes timeline {
+    from{
+        height: 0%;
+    }
+    to{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+   .timeline::after{
+    left: 30px;
+   }
+   .left-content-container img{
+   left: -40px;
+   }
+   .left-content-container{
+    width: 90%;
+    margin-left: 50px;
+   }
+   .right-content-container{
+    width: 90%;
+    margin-left: 30px;
+   }
+   .my-project-details img{
+    max-width: 80%;
+    
+   }
+}
+
+.my-project img{
+    height: 250px;
+}
+.my-project-details{
+    position: relative;
+    text-align: center;
+   
+}
+.my-project-details button{
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    opacity: 0;
+}
+.my-project-details:hover img{
+   opacity: 0.2;
+   transition: 1s ease;
+}
+
+.my-project-details:hover button{
+    opacity: 1;
+    transition: 1s ease;
+ }
+
+ #myNavBar .nav-link:hover{
+    color: green;
+ }
+ #myNavBar .nav-link:active{
+    color: rgb(252, 252, 252);
+ }
+.talk:hover{
+    background-color: #198754;
+    border-radius: 5px;
+}
+.talks:hover{
+    color: white;
+    background-color: #198754;
+}
+.see:hover{ 
+    text-decoration:none;
+}
+
+.project-description p{
+    text-align: justify; 
+    font-size: 15px;
+    line-height: 23px;
+}
+.custom-font{
+    font-size: 22px;
+    font-weight: normal;
+}
